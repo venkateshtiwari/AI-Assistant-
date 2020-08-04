@@ -259,11 +259,7 @@ if __name__ == "__main__":
             speak("pycharm will open shortly")
             pycharmPath = "C:\\Program Files\\JetBrains\\PyCharm 2020.1.4\\bin\\pycharm64.exe"
             os.startfile(pycharmPath)
-        elif "open alex" in query:
-            speak("opening alex")
-            alexPath = "C:\\Users\\Documents\\Python\\Alex.py"
-            os.startfile(alexPath)
-
+        
         #Exit
         elif "shutdown" in query:
             speak("shutting down")

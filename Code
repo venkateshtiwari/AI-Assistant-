@@ -51,8 +51,8 @@ def sendEmail(to,content):
     server = smtplib.SMTP('smtp.gmail.com')
     server.ehlo()
     server.starttls()
-    server.login('venkateshtiwari635@gmail.com','6venkatesh22')
-    server.sendmail("venkateshtiwari635@gmail.com",to,content)
+    server.login('enter your email here','enter your password here')
+    server.sendmail("enter the same email here",to,content)
     server.close()
 
 #for main function
@@ -229,7 +229,7 @@ if __name__ == "__main__":
             note(ans_take_from_user_notepad_note)
  
         elif "open zoom" in query:
-            zoomPath = "C:\\Users\\Manish Tiwari\\AppData\\Roaming\\Zoom\\bin\\Zoom.exe"
+            zoomPath = "C:\\Users\\AppData\\Roaming\\Zoom\\bin\\Zoom.exe"
             os.startfile(zoomPath)
         elif "open edge" in query:
             speak("Edge will open shortly")
@@ -249,7 +249,7 @@ if __name__ == "__main__":
             os.startfile(photoshopPath)
         elif "open whatsapp" in query:
             speak ("opening whatsapp")
-            whatsappPath = "C:\\Users\\Manish Tiwari\\AppData\\Local\\WhatsApp\\Whatsapp.exe"
+            whatsappPath = "C:\\Users\\\AppData\\Local\\WhatsApp\\Whatsapp.exe"
             os.startfile(whatsappPath)
         elif "open pdf reader" in query or "open acrobat reader" in query or "open adobe acrobat reader" in query:
             speak("adobe acrobat reader dc will open shortly.")
@@ -261,7 +261,7 @@ if __name__ == "__main__":
             os.startfile(pycharmPath)
         elif "open alex" in query:
             speak("opening alex")
-            alexPath = "C:\\Users\\Manish Tiwari\\Documents\\Python\\Alex.py"
+            alexPath = "C:\\Users\\Documents\\Python\\Alex.py"
             os.startfile(alexPath)
 
         #Exit
